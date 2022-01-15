@@ -1,0 +1,280 @@
+/* -------------------------
+    Google font (Poppins) (inter) (Manrope)
+-----------------------------*/
+
+@import url("https://fonts.googleapis.com/css2?family=Inter&family=Manrope&family=Poppins:wght@100;200;400;500;700&display=swap");
+/*------------
+   common css
+   ------------ */
+* {
+     margin: 0;
+     padding: 0;
+     box-sizing: border-box;
+}
+body {
+     font-family: "Poppins", sans-serif;
+}
+
+.container {
+     max-width: 1280px;
+     margin: 0 auto;
+}
+
+/* -------------------
+Banner Section start 
+----------------------- */
+.main-title {
+     margin: 87px 0px 71px;
+     font-size: 24px;
+     font-weight: 700;
+     color: #3a3a3a;
+}
+.main-banner {
+     display: flex;
+     justify-content: space-between;
+}
+.banner-details {
+     width: 582px;
+     height: 270px;
+     margin-top: 74px;
+}
+.banner-heading {
+     font-size: 52px;
+     font-weight: 700;
+     color: #3a3a3a;
+}
+.banner-info {
+     font-size: 16px;
+     font-weight: 600;
+     color: #3a3a3a;
+     margin-bottom: 40px;
+     margin-top: 16px;
+}
+.btn {
+     font-size: 16px;
+     color: #ffffff;
+     background: #e02c6d;
+     border-radius: 40px;
+     padding: 10px 24px;
+     text-decoration: none;
+}
+.btn:hover {
+     color: #3a3a3a;
+}
+.banner-image {
+     width: 440px;
+     height: 414px;
+}
+.banner-image img {
+     width: 100%;
+     transform: scale(1);
+     transition: 0.3s ease-in-out;
+}
+.banner-image:hover img {
+     transform: scale(1.3);
+}
+/* for hr  */
+hr {
+     margin: 100px 0;
+}
+/* -------------------
+Popular Collection section ---------------------------*/
+.collection-title {
+     text-align: center;
+     font-weight: 600;
+     font-size: 28px;
+     color: #3a3a3a;
+     padding-bottom: 40px;
+}
+.collection-items {
+     display: grid;
+     grid-template-columns: repeat(3, 1fr);
+     grid-row-gap: 30px;
+     justify-items: center;
+}
+.item {
+     width: 329px;
+     height: 476px;
+     box-shadow: 0px 0px 40px rgba(0, 0, 0, 0.15);
+     border-radius: 5px;
+     padding: 17px 15px;
+}
+
+.item-title {
+     font-weight: 500;
+     font-size: 28px;
+     color: #18191f;
+}
+.item h6 {
+     font-size: 24px;
+     font-weight: 400;
+     color: rgba(0, 0, 0, 0.87);
+     font-family: "Inter", sans-serif;
+}
+
+.item-info .fas {
+     font-size: 10px;
+     color: #fb8200;
+}
+.item-info span {
+     font-size: 14px;
+     font-weight: 700;
+     color: #5e6366;
+}
+.item p {
+     color: #787885;
+     font-size: 14px;
+     font-weight: 700;
+     font-family: "Inter", sans-serif;
+}
+.see {
+     text-align: end;
+     margin-top: 20px;
+}
+.see > a {
+     font-size: 16px;
+     font-weight: 700;
+     text-decoration: none;
+     color: rgba(224, 44, 109, 0.87);
+}
+
+/*-----------------------
+ feedback section (bouns) 
+ -----------------------------*/
+.feedbacks {
+     display: flex;
+     justify-content: space-evenly;
+     margin-top: 100px;
+}
+.fback {
+     text-align: center;
+}
+.fback span i {
+     font-size: 80px;
+     color: #e02c6d;
+}
+.fback h6 {
+     font-size: 50px;
+     color: #3a3a3a;
+     font-weight: unset;
+}
+.fback p {
+     color: #787885;
+     font-size: 14px;
+     font-weight: 700;
+     font-family: "Inter", sans-serif;
+}
+/* --------------
+     footer section
+------------------- */
+.footer {
+     margin-top: 100px;
+     background-color: #0a0826;
+     padding: 50px 0;
+     text-align: center;
+}
+.footer-heading {
+     font-size: 24px;
+     font-weight: 700;
+     color: #ffffff;
+}
+.copyright {
+     font-size: 14px;
+     color: #d9dbe1;
+     font-family: "Manrope", sans-serif;
+     font-weight: 700;
+}
+.social-icon a i {
+     background-color: #22213c;
+     margin: 0 8px;
+     margin-top: 20px;
+     color: #ffffff;
+     font-size: 21px;
+     padding: 10px;
+     border-radius: 50%;
+}
+a:hover .icon {
+     background-color: #e02c6d;
+}
+
+/*------------------
+      Media query 
+ ------------------*/
+
+/* For modile devices */
+@media only screen and (max-width: 688px) {
+     .container {
+          width: 80vw;
+     }
+     .main-title {
+          text-align: center;
+     }
+     .main-banner {
+          flex-direction: column;
+     }
+     .banner-details {
+          width: auto;
+          height: auto;
+          margin-top: 0;
+     }
+     .banner-info {
+          margin-bottom: 30px;
+     }
+     .banner-image img {
+          width: 75%;
+          margin-top: 65px;
+     }
+     .collection-items {
+          grid-template-columns: repeat(1, 1fr);
+     }
+     .feedbacks {
+          flex-direction: column;
+          row-gap: 30px;
+     }
+}
+/* For tablet devices */
+@media only screen and (min-width: 689px) and (max-width: 991px) {
+     .container {
+          width: 80vw;
+     }
+     .main-title {
+          text-align: center;
+     }
+     .main-banner {
+          flex-direction: column;
+     }
+     .banner-details {
+          width: auto;
+          height: auto;
+          margin-top: 0;
+     }
+     .banner-info {
+          margin-bottom: 30px;
+     }
+     .banner-image img {
+          width: 75%;
+          margin-top: 65px;
+          margin-left: 50px;
+     }
+     .collection-items {
+          grid-template-columns: repeat(2, 1fr);
+     }
+     .fback span i {
+          font-size: 60px;
+     }
+     .fback h6 {
+          font-size: 35px;
+     }
+     .fback p {
+          font-size: 25px;
+     }
+     .footer-heading {
+          font-size: 33px;
+     }
+     .copyright {
+          font-size: 20px;
+     }
+     .social-icon a i {
+          font-size: 35px;
+     }
+}
