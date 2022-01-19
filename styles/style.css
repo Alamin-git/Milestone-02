@@ -205,12 +205,13 @@ a:hover .icon {
 @media only screen and (max-width: 688px) {
      .container {
           width: 80vw;
+          overflow-x: hidden;
      }
      .main-title {
           text-align: center;
      }
      .main-banner {
-          flex-direction: column;
+          flex-direction: column-reverse;
      }
      .banner-details {
           width: auto;
@@ -236,6 +237,7 @@ a:hover .icon {
 @media only screen and (min-width: 689px) and (max-width: 991px) {
      .container {
           width: 80vw;
+          overflow-x: hidden;
      }
      .main-title {
           text-align: center;
